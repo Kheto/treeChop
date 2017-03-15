@@ -15,8 +15,10 @@ function Man(){
 
   this.update = function(){
       if(this.closest == null || this.closest.chopped){
-        if(this.independant){
+        //Check to see if he currently has a target, and if it's been chopped down
+        if(this.independant){ //If he's just wondering about
           this.closest = forest.getClosest(this.pos);
+          //Set his target to the closest tree
         }
       }
       if (!this.independant){
