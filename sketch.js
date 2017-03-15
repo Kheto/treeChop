@@ -86,7 +86,7 @@ function setup() {
 }
 
 function draw(){
-	if(wood > 5 && manButt == null){
+	if(wood => 5 && manButt == null){
 		//Check if the player has enough wood to spawn a dude, if they do, create the button.
 		//Also check to see if the button exists already.
 		manButt = createImg("data/birthBtn.png", "Birth A Soul Into The Forest");
